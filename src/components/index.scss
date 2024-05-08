@@ -1,0 +1,250 @@
+@import "../styles/variables";
+
+// LOGO_START
+.logo {
+      position: relative;
+      margin-top: -8px;
+      width: 23px;
+      height: 28px;
+      @media (max-width:800px) {
+         position: absolute;         
+         top: 20px;
+         left: 20px;
+         
+      }
+ }
+
+// LOGO _END
+
+// BUTTON-START
+.btn-primary {
+   text-decoration: none;
+   color:$blue-color !important;
+   font-family: "SF Mono";
+   font-size: 14px;
+   background-color: transparent;
+   border:1px solid $blue-color;
+   border-radius: $border-radius;
+   display: inline-block;
+   transition: 0.2s ease-in-out; 
+   @media (max-width:550px) {
+      text-align: center;
+   }
+   &:hover {
+      box-shadow: 3px 3px 1px 1px $blue-color;
+      transform: translate(-7px, -7%); 
+   }
+}
+// BUTTON-END
+// NAVBAR-START
+.navbar {
+   &__click {
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin-top: 35px;
+      margin-right: 80px;
+   }
+   
+   @media (max-width: 800px) {
+      &__click {
+         display: block;
+         margin-top: 35px;
+         margin-right: 40px;
+      }
+   }
+
+   position: fixed;
+   z-index: 9;
+   justify-content: space-between;
+   color: white;
+   padding-inline: 3%;
+   width: 96%;
+   height: auto;
+   top: 0;
+   left: 0;
+   height: 14vh;
+   display: flex;
+   align-items: center;
+   transition: top 0.3s; 
+   backdrop-filter: blur(3px); 
+   -webkit-box-shadow: 0px 50px 19px -50px rgba(0,0,0,0.75);
+   -moz-box-shadow: 0px 50px 19px -50px rgba(0,0,0,0.75);
+   box-shadow: 0px 50px 19px -50px rgba(0,0,0,0.75);
+   @media (max-width:800px) {
+      margin: 0;
+      top: 0;
+      height: auto;
+   }
+   &__blur {
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      width: 95%;
+      height: 10vh;
+      z-index: -1;
+      background-color: blue;
+      filter: blur(100px);
+   }
+   &__buttons {
+      position: relative;
+      @media (max-width: 800px) {
+         display: none;
+      }
+      > a {
+         margin-inline: 12px;
+         font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono",monospace;
+         font-size: $fz-xs;
+         color: #ccd6f6;
+         cursor: pointer;
+         transition: 0.2s ease-in-out; 
+         &:hover {
+            color: $blue-color;
+         }
+      }
+      span {
+         color:$blue-color;
+      }  
+   }
+}
+
+// CONTACTS-START
+.contacts {
+   @media (max-width:550px) {
+      display: none;
+   }
+   &__list {
+      position: fixed;
+      bottom: 0px;
+      left: 50px;
+      right: auto;
+      z-index: 10;
+      color: #a8b2d1;
+      list-style: none;
+      @media (max-width:650px) {
+         left: 20px;
+      }
+   }
+   li {
+      padding-block: 10px;
+      transition: 0.3s ease-in-out; 
+      cursor: pointer;
+      transition: 0.2s ease-in-out; 
+      transform: translate(0, 0);
+      &:hover {
+         transform: translate(0px, -7%); 
+         color:$blue-color;
+      }
+   }
+   &__list::after {
+      content: '';
+      display: block;
+      width: 1.6px;
+      height: 90px;
+      margin: 0 auto;
+      background-color: #a8b2d1;
+      margin-top: 20px;
+   }
+}
+// CONTACTS-END
+
+// EMAIL-START
+.email {
+   @media (max-width:550px) {
+      display: none;
+   }
+   @media (max-width:650px) {
+      right: 20px;
+   }
+      position: fixed;
+      bottom: 0px;
+      right: 50px;
+      left: auto;
+      color: #a8b2d1;
+      list-style: none;
+   &__list {
+     
+      display: flex;
+      flex-direction: column;
+      -webkit-box-align: center;
+      align-items: center;
+      position: relative;
+   }
+  
+   &__list::after {
+      content: '';
+      display: block;
+      width: 1.6px;
+      height: 90px;
+      margin: 0 auto;
+      background-color: #a8b2d1;
+   }
+   p {
+      margin: 20px auto; 
+      padding: 10px;
+      writing-mode: vertical-rl;
+      font-family: "SF Mono Light", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+      font-size: 12px;
+      line-height: 18px;
+      font-weight: 100;
+      letter-spacing: 0.1em;
+      transition: 0.3s ease-in-out; 
+      transform: translate(0, 0);
+      &:hover {
+         color:$blue-color;
+         transform: translate(0px, -2%); 
+      }
+   }
+}
+// EMAIL-END
+
+
+
+//ListIconsMobile -START
+.list {
+   display: grid;
+   place-items: center;
+   &__icons {
+      display: flex;
+      list-style-type: none;
+      gap: 25px;
+   }
+}
+//ListIconsMobile -END
+
+
+.boxing {
+   width: 100%;
+   height: 100vh;
+   z-index: -1;
+   backdrop-filter: blur(30px); 
+   background-color: none !important;
+   filter: blur(0px) !important;
+   &__right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      align-items: none !important;
+      position: absolute;
+      padding: 0;
+      margin: 0;
+      top: 0;
+      right: 0;
+      width: 65%;
+      height: 101vh;
+      background-color: #112240;
+      > a {
+         width: 80%;
+         text-align: center;
+         font-style: none;
+         color: white;
+         font-family: 'SF Mono';
+         font-size: 18px;
+         > span {
+            color: $blue-color
+         }
+      }
+   }
+}

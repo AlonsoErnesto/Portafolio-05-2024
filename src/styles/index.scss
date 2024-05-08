@@ -1,0 +1,120 @@
+@import "./variables";
+
+@font-face {
+  font-family: "SF Mono";
+  src: url("./fonts/sf-mono/SFMono-Regular.otf");
+}
+
+@font-face {
+  font-family: "SF Mono Light";
+  src: url("./fonts/sf-mono/SFMono-Light.otf");
+}
+
+@font-face {
+  font-family: "SF Mono Heavy";
+  src: url("./fonts/sf-mono/SFMono-Heavy.otf");
+}
+
+@font-face {
+  font-family: "Fira Mono";
+  src: url("./fonts/fira_mono/FiraMono-Regular.ttf");
+}
+
+
+@font-face {
+  font-family: "Calibre Light";
+  src: url("./fonts/calibre/CalibreLight.otf");
+}
+
+@font-face {
+  font-family: "Calibre";
+  src: url("./fonts/calibre/CalibreRegular.otf");
+}
+
+@font-face {
+  font-family: "Calibre Bold";
+  src: url("./fonts/calibre/CalibreSemibold.otf");
+}
+
+*, ::before, ::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  line-height: 1.3;
+}
+
+body{
+  background-color: $bg-primary;  
+  font-family: $font-calibre;
+  font-size: $fz-xl;
+  color: $slate;
+  line-height: 1.3;
+  margin: 0px;
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+
+  max-width: 100%; /* Limita el ancho máximo del cuerpo */
+  overflow-x: hidden; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0px 0px 10px;
+  font-weight: 600;
+  color: #ccd6f6;
+  line-height: 1.1;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* Animación de desvanecimiento */
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Animación de deslizamiento */
+@keyframes slide-up {
+  from { transform: translateY(-110px); }
+  to { transform: translateY(0); }
+}
+
+@keyframes slide-down {
+  from { transform: translateY(110px); }
+  to { transform: translateY(0); }
+}
+/* Aplica las animaciones a la clase correspondiente */
+.section {
+  animation: fade-in 1s ease-out, slide-up 1s ease-out;  
+}
+
+.ani-down {
+  animation: fade-in 1s ease-out, slide-down 1s ease-out;
+}
+
+
+
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Fondo del scrollbar */
+::-webkit-scrollbar-track {
+  background: rgb(0, 0, 0);
+}
+
+/* Estilo del thumb (la barra que se desplaza) */
+::-webkit-scrollbar-thumb {
+  background: $blue-color;
+}
+
+/* Hover sobre el thumb */
+::-webkit-scrollbar-thumb:hover {
+  background: $blue-color;
+}

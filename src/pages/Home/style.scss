@@ -1,0 +1,60 @@
+@import "../../styles/variables";
+
+.container {
+   display: flex;
+   width: 100%;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   margin-top: 5vh;
+   &__content {
+      width: 65%;
+      @media (max-width:550px) {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         width: 80%;
+         height: 100vh;
+      }
+
+      @media (max-width:400px) {
+         display: flex;
+         justify-content: flex;
+         width: 80%;
+         padding: 0;
+         margin: 0;
+      }
+      p:nth-child(1){
+         font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono",monospace;
+         font-size: clamp($fz-sm,5vw,$fz-md);
+         font-weight: 400;
+         color:$blue-color;
+         line-height: 5;
+      }
+      &__name {
+         font-family: $font-calibre;
+         font-size: clamp(40px, 8vw, 80px);
+         color: $black_light-color;
+         line-height:1.1;
+      }
+      h3 {
+         color: $secondary-color;
+         font-family: $font-calibre;
+         margin: 0;
+         font-size: clamp(40px, 8vw, 80px);
+         line-height:.9;
+      }
+      &__description{
+         font-family: $font-calibre;
+         padding-top: 30px;
+         color: $secondary-color;
+         max-width: 550px;
+         font-size: 20px;
+         margin-bottom: 5vh;
+         span {
+            color:$blue-color;
+            cursor: pointer;
+         }
+      }
+   }
+}

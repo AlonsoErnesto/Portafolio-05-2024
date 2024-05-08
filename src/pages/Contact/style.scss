@@ -1,0 +1,56 @@
+@import "../../styles/variables";
+
+.contact {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   width: 100%;
+   &__center {
+      max-width: 600px;
+      margin: 0px auto;
+      padding: 100px 0px;
+      text-align: center;
+      p {
+         @media (max-width:800px) {
+            max-width: 400px;
+         }
+         @media (max-width:460px) {
+            max-width: 300px;
+         }
+      }
+
+      display: block;
+      unicode-bidi: isolate;
+      &__pass {
+         font-size: clamp($fz-md, 2vw, $fz-xl);   
+         font-weight: 300;
+         letter-spacing: .03em;
+         color:$blue-color;
+         &::before{
+               content: "0" counter(section) ".";
+               font-size: 20px;
+               font-family: 'SF Mono';
+               position: relative;
+               counter-increment: section 4;
+               font-size: clamp($fz-md, 1vw, $fz-xl);   
+               margin-right: 10px;
+         }
+      }
+      h2 {
+         font-size: 60px;
+      }
+      p {
+         display: block;
+         margin-block-start: 1em;
+         margin-block-end: 1em;
+         margin-inline-start: 0px;
+         margin-inline-end: 0px;
+         unicode-bidi: isolate;
+         margin: 0px 0px 15px;
+      }
+      div {
+         margin-top: 50px;
+      }
+   }
+}
