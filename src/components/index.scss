@@ -135,6 +135,9 @@
       &:hover {
          transform: translate(0px, -7%); 
          color:$blue-color;
+      } a {
+           text-decoration: none;
+            color: inherit;
       }
    }
    &__list::after {

@@ -17,7 +17,7 @@ export const Contact:React.FC<AboutProps> = ({idNav}) => {
         Although I’m not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
         </p>
         <div>
-          <Button url='gmail' text='Saludame!' height={2} width={1}/>
+          <Button url='mailto:ernesto134alonso123@gmail.com' text='Saludame!' height={2} width={1}/>
         </div>
       </div>
     </div>

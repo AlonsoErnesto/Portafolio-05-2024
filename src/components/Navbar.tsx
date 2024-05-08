@@ -56,7 +56,7 @@ export const Navbar = () => {
           <a href='#work'><span>02.</span> Experience</a>
           <a href='#proyect'><span>03.</span> Proyect</a>
           <a href='#contact'><span>04.</span> Contact</a>
-          <Button url='./resume.pdf' text='Resume' width={0.75} height={1}/>
+          <Button url='/assets/pdf/CV-Ernesto_Mamani.pdf' download='downlodad' text='Resume' width={0.75} height={1}/>
         </div>
     </div>
   )

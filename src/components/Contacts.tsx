@@ -9,11 +9,31 @@ export const Contacts = () => {
   return (
     <div className='contacts classname'>
       <ul className='contacts__list'>
-         <li><FiGithub size={21} color=''/></li>
-         <li><FaInstagram size={21} color=''/></li>
-         <li><FaWhatsapp size={21} color=''/></li>
-         <li><FiLinkedin size={21} color=''/></li>
-         <li><FaCodepen size={21} color=''/></li>
+        <li>
+          <a  target="_blank" href='https://github.com/AlonsoErnesto'>
+            <FiGithub size={21} color='' />
+          </a>
+        </li>
+        <li>
+          <a  target="_blank" href='https://github.com/AlonsoErnesto'>
+            <FaInstagram size={21} color='' />
+          </a>
+        </li>
+        <li>
+          <a  target="_blank" href='https://github.com/AlonsoErnesto'>
+            <FaWhatsapp size={21} color='' />
+          </a>
+        </li>
+        <li>
+          <a  target="_blank" href='https://github.com/AlonsoErnesto'>
+            <FiLinkedin size={21} color='' />
+          </a>
+        </li>
+        <li>
+          <a  target="_blank" href='https://github.com/AlonsoErnesto'>
+            <FaCodepen size={21} color='' />
+          </a>
+        </li>
       </ul>
     </div>
   )
