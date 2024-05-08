@@ -42,7 +42,7 @@ const App = () => {
       }
       <Footer repo={repo} repoPriv={repoPriv}/>
       {/* Content */}
-      <Contacts classname='ani-down'/>
+      <Contacts/>
       <Email/>
     </div>
   )

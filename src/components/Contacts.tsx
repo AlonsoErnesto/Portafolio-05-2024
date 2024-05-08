@@ -5,11 +5,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FiLinkedin } from "react-icons/fi";
 import { FaCodepen } from "react-icons/fa";
 
-interface ContactsProps {
-  classname:string
-}
-
-export const Contacts:React.FC<ContactsProps> = ({classname}) => {
+export const Contacts = () => {
   return (
     <div className='contacts classname'>
       <ul className='contacts__list'>
