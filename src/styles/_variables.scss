@@ -1,3 +1,39 @@
+@font-face {
+    font-family: "SF Mono";
+    src: url("./assets/fonts/sf-mono/SFMono-Regular.otf");
+  }
+  
+  @font-face {
+    font-family: "SF Mono Light";
+    src: url("./assets/fonts/sf-mono/SFMono-Light.otf");
+  }
+  
+  @font-face {
+    font-family: "SF Mono Heavy";
+    src: url("./assets/fonts/sf-mono/SFMono-Heavy.otf");
+  }
+  
+  @font-face {
+    font-family: "Fira Mono";
+    src: url("./assets/fonts/fira_mono/FiraMono-Regular.ttf");
+  }
+  
+  
+  @font-face {
+    font-family: "Calibre Light";
+    src: url("./assets/fonts/calibre/CalibreLight.otf");
+  }
+  
+  @font-face {
+    font-family: "Calibre";
+    src: url("./assets/fonts/calibre/CalibreRegular.otf");
+  }
+  
+  @font-face {
+    font-family: "Calibre Bold";
+    src: url("./assets/fonts/calibre/CalibreSemibold.otf");
+  }
+
 // variables
 $bg-primary:rgb(10, 25, 47);
 $secondary-color:rgb(136, 146, 176);
